@@ -1,0 +1,7 @@
+
+{
+  "name": "MY TV",
+  "version": "1.0.0",
+  "parameter": "menu:https://dormarig-prog.github.io/my-tv/menu.json",
+  "welcome": "none"
+}

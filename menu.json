@@ -8,46 +8,29 @@
       "data": {
         "type": "pages",
         "headline": "MY TV",
-        "pages": [
+        "template": {
+          "type": "separate",
+          "layout": "0,0,4,3",
+          "color": "msx-glass"
+        },
+        "items": [
           {
-            "items": [
-              {
-                "type": "space",
-                "layout": "0,0,4,3",
-                "color": "msx-glass",
-                "headline": "Кинопоиск"
-              },
-              {
-                "type": "space",
-                "layout": "4,0,4,3",
-                "color": "msx-glass",
-                "headline": "VK Видео"
-              },
-              {
-                "type": "space",
-                "layout": "8,0,4,3",
-                "color": "msx-glass",
-                "headline": "FitStars"
-              },
-              {
-                "type": "space",
-                "layout": "0,3,4,3",
-                "color": "msx-glass",
-                "headline": "Lampa"
-              },
-              {
-                "type": "space",
-                "layout": "4,3,4,3",
-                "color": "msx-glass",
-                "headline": "Zona"
-              },
-              {
-                "type": "space",
-                "layout": "8,3,4,3",
-                "color": "msx-glass",
-                "headline": "Браузер"
-              }
-            ]
+            "title": "Кинопоиск"
+          },
+          {
+            "title": "VK Видео"
+          },
+          {
+            "title": "FitStars"
+          },
+          {
+            "title": "Lampa"
+          },
+          {
+            "title": "Zona"
+          },
+          {
+            "title": "Браузер"
           }
         ]
       }

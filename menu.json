@@ -8,29 +8,52 @@
       "data": {
         "type": "pages",
         "headline": "MY TV",
-        "template": {
-          "type": "separate",
-          "layout": "0,0,4,3",
-          "color": "msx-glass"
-        },
-        "items": [
+        "pages": [
           {
-            "title": "Кинопоиск"
-          },
-          {
-            "title": "VK Видео"
-          },
-          {
-            "title": "FitStars"
-          },
-          {
-            "title": "Lampa"
-          },
-          {
-            "title": "Zona"
-          },
-          {
-            "title": "Браузер"
+            "items": [
+              {
+                "type": "default",
+                "layout": "0,0,4,3",
+                "label": "Кинопоиск",
+                "color": "msx-glass",
+                "action": "info:Кинопоиск"
+              },
+              {
+                "type": "default",
+                "layout": "4,0,4,3",
+                "label": "VK Видео",
+                "color": "msx-glass",
+                "action": "info:VK Видео"
+              },
+              {
+                "type": "default",
+                "layout": "8,0,4,3",
+                "label": "FitStars",
+                "color": "msx-glass",
+                "action": "info:FitStars"
+              },
+              {
+                "type": "default",
+                "layout": "0,3,4,3",
+                "label": "Lampa",
+                "color": "msx-glass",
+                "action": "info:Lampa"
+              },
+              {
+                "type": "default",
+                "layout": "4,3,4,3",
+                "label": "Zona",
+                "color": "msx-glass",
+                "action": "info:Zona"
+              },
+              {
+                "type": "default",
+                "layout": "8,3,4,3",
+                "label": "Браузер",
+                "color": "msx-glass",
+                "action": "info:Браузер"
+              }
+            ]
           }
         ]
       }

@@ -1,57 +1,179 @@
-
 {
+  "name": "MY TV",
+  "version": "2.0.0",
   "headline": "MY TV",
+  "style": "flat",
+  "cache": false,
+  "restore": true,
+  "background": "https://dormarig-prog.github.io/my-tv/assets/background.svg",
   "menu": [
     {
+      "id": "home",
       "label": "Главная",
       "icon": "home",
+      "focus": true,
+      "execute": true,
       "data": {
         "type": "pages",
-        "headline": "MY TV",
+        "headline": "Ваш вечер начинается здесь",
+        "important": true,
+        "extension": "MY TV",
         "pages": [
           {
             "items": [
               {
-                "type": "default",
-                "layout": "0,0,4,3",
-                "label": "Кинопоиск",
-                "color": "msx-glass",
-                "action": "info:Кинопоиск"
+                "type": "space",
+                "layout": "0,0,12,1",
+                "headline": "Смотрите. Двигайтесь. Отдыхайте.",
+                "color": "transparent"
               },
               {
                 "type": "default",
-                "layout": "4,0,4,3",
-                "label": "VK Видео",
-                "color": "msx-glass",
-                "action": "info:VK Видео"
+                "layout": "0,1,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "browser",
+                "title": "Браузер",
+                "titleFooter": "Поиск в интернете",
+                "icon": "#9cc9ef:language",
+                "color": "#202c3b",
+                "action": "link:window:https://ya.ru/"
               },
               {
                 "type": "default",
-                "layout": "8,0,4,3",
-                "label": "FitStars",
-                "color": "msx-glass",
-                "action": "info:FitStars"
+                "layout": "4,1,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "kinopoisk",
+                "title": "Кинопоиск",
+                "titleFooter": "Веб-версия",
+                "icon": "#ffab73:movie",
+                "color": "#302723",
+                "action": "link:window:https://hd.kinopoisk.ru/"
               },
               {
                 "type": "default",
-                "layout": "0,3,4,3",
-                "label": "Lampa",
-                "color": "msx-glass",
-                "action": "info:Lampa"
+                "layout": "8,1,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "vkvideo",
+                "title": "VK Видео",
+                "titleFooter": "Веб-версия",
+                "icon": "#94bdff:play-circle-outline",
+                "color": "#202c41",
+                "action": "link:window:https://vkvideo.ru/"
               },
               {
                 "type": "default",
-                "layout": "4,3,4,3",
-                "label": "Zona",
-                "color": "msx-glass",
-                "action": "info:Zona"
+                "layout": "0,3,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "fitstars",
+                "title": "FitStars",
+                "titleFooter": "Веб-версия",
+                "icon": "#c5e6a4:fitness-center",
+                "color": "#283229",
+                "action": "link:window:https://fitstars.ru/"
               },
               {
                 "type": "default",
-                "layout": "8,3,4,3",
-                "label": "Браузер",
-                "color": "msx-glass",
-                "action": "info:Браузер"
+                "layout": "4,3,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "lampa",
+                "title": "Lampa",
+                "titleFooter": "Веб-приложение",
+                "icon": "#d0b7ff:weekend",
+                "color": "#302a40",
+                "action": "link:https://lampa.mx/"
+              },
+              {
+                "type": "default",
+                "layout": "8,3,4,2",
+                "round": true,
+                "iconSize": "small",
+                "id": "zona",
+                "title": "Zona",
+                "titleFooter": "О запуске на LG",
+                "icon": "#e0c599:live-tv",
+                "color": "#302d28",
+                "action": "panel:data",
+                "data": {
+                  "headline": "Zona на LG",
+                  "pages": [
+                    {
+                      "items": [
+                        {
+                          "type": "space",
+                          "layout": "0,0,8,4",
+                          "headline": "Запуск пока не настроен",
+                          "text": "На официальном сайте доступны версии для Windows и Android. Запуск Zona на webOS не подтверждён. APK-файлы на LG webOS не устанавливаются.",
+                          "color": "#202633"
+                        },
+                        {
+                          "type": "button",
+                          "layout": "0,4,8,1",
+                          "label": "Официальный сайт",
+                          "action": "link:window:https://zona.ru/"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "all",
+                "type": "button",
+                "layout": "0,5,8,1",
+                "label": "Все приложения",
+                "action": "content:https://dormarig-prog.github.io/my-tv/all-apps.json"
+              },
+              {
+                "id": "dormi",
+                "type": "button",
+                "layout": "8,5,4,1",
+                "label": "DORMI · Скоро",
+                "action": "info:DORMI появится позже. Адрес приложения пока не добавлен."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "apps",
+      "label": "Все приложения",
+      "icon": "apps",
+      "data": "https://dormarig-prog.github.io/my-tv/all-apps.json"
+    },
+    {
+      "id": "help",
+      "label": "О меню",
+      "icon": "info-outline",
+      "data": {
+        "type": "pages",
+        "headline": "О меню",
+        "pages": [
+          {
+            "items": [
+              {
+                "type": "space",
+                "layout": "0,0,12,4",
+                "headline": "Ваши приложения. Один экран.",
+                "text": "Стрелки — выбор, OK — открыть, Назад — вернуться.{br}{br}Плитки с подписью «Веб-версия» открывают сайты. Воспроизведение зависит от браузера телевизора и подписки сервиса. Установленные приложения можно открыть через Home на пульте LG.{br}{br}«Все приложения» — каталог этого меню, а не автоматический список приложений телевизора.",
+                "color": "#202633"
+              },
+              {
+                "type": "button",
+                "layout": "0,4,6,1",
+                "label": "Обновить меню",
+                "action": "reload"
+              },
+              {
+                "type": "button",
+                "layout": "6,4,6,1",
+                "label": "Все приложения",
+                "action": "content:https://dormarig-prog.github.io/my-tv/all-apps.json"
               }
             ]
           }

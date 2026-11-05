@@ -1,0 +1,143 @@
+{
+  "type": "pages",
+  "headline": "Все приложения",
+  "cache": false,
+  "background": "https://dormarig-prog.github.io/my-tv/assets/background.svg",
+  "extension": "MY TV",
+  "pages": [
+    {
+      "items": [
+        {
+          "type": "default",
+          "layout": "0,0,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "browser",
+          "title": "Браузер",
+          "titleFooter": "Поиск в интернете",
+          "icon": "#9cc9ef:language",
+          "color": "#202c3b",
+          "action": "link:window:https://ya.ru/"
+        },
+        {
+          "type": "default",
+          "layout": "4,0,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "kinopoisk",
+          "title": "Кинопоиск",
+          "titleFooter": "Веб-версия",
+          "icon": "#ffab73:movie",
+          "color": "#302723",
+          "action": "link:window:https://hd.kinopoisk.ru/"
+        },
+        {
+          "type": "default",
+          "layout": "8,0,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "vkvideo",
+          "title": "VK Видео",
+          "titleFooter": "Веб-версия",
+          "icon": "#94bdff:play-circle-outline",
+          "color": "#202c41",
+          "action": "link:window:https://vkvideo.ru/"
+        },
+        {
+          "type": "default",
+          "layout": "0,2,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "fitstars",
+          "title": "FitStars",
+          "titleFooter": "Веб-версия",
+          "icon": "#c5e6a4:fitness-center",
+          "color": "#283229",
+          "action": "link:window:https://fitstars.ru/"
+        },
+        {
+          "type": "default",
+          "layout": "4,2,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "lampa",
+          "title": "Lampa",
+          "titleFooter": "Веб-приложение",
+          "icon": "#d0b7ff:weekend",
+          "color": "#302a40",
+          "action": "link:https://lampa.mx/"
+        },
+        {
+          "type": "default",
+          "layout": "8,2,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "zona",
+          "title": "Zona",
+          "titleFooter": "О запуске на LG",
+          "icon": "#e0c599:live-tv",
+          "color": "#302d28",
+          "action": "panel:data",
+          "data": {
+            "headline": "Zona на LG",
+            "pages": [
+              {
+                "items": [
+                  {
+                    "type": "space",
+                    "layout": "0,0,8,4",
+                    "headline": "Запуск пока не настроен",
+                    "text": "На официальном сайте доступны версии для Windows и Android. Запуск Zona на webOS не подтверждён. APK-файлы на LG webOS не устанавливаются.",
+                    "color": "#202633"
+                  },
+                  {
+                    "type": "button",
+                    "layout": "0,4,8,1",
+                    "label": "Официальный сайт",
+                    "action": "link:window:https://zona.ru/"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "default",
+          "layout": "0,4,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "dormi",
+          "title": "DORMI",
+          "titleFooter": "Скоро",
+          "icon": "#9a92b0:nights-stay",
+          "color": "#24232d",
+          "action": "info:DORMI появится здесь, когда будет готов адрес приложения."
+        },
+        {
+          "type": "default",
+          "layout": "4,4,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "add",
+          "title": "Добавить приложение",
+          "titleFooter": "Как расширить меню",
+          "icon": "#aebed1:add",
+          "color": "#202633",
+          "action": "info:Пришлите название и ссылку на приложение. После обновления меню оно появится здесь. Для запуска установленного приложения LG нужен подтверждённый идентификатор."
+        },
+        {
+          "type": "default",
+          "layout": "8,4,4,2",
+          "round": true,
+          "iconSize": "small",
+          "id": "refresh",
+          "title": "Обновить меню",
+          "titleFooter": "Загрузить изменения",
+          "icon": "#aebed1:refresh",
+          "color": "#202633",
+          "action": "reload"
+        }
+      ]
+    }
+  ]
+}
